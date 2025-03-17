@@ -211,21 +211,36 @@ document.addEventListener('DOMContentLoaded', function() {
                 results: currentResults.length > 0 ? currentResults : null
             };
             
-            // 调用API
-            const response = await fetch('/api/ask', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ question, context })
-            });
-            
-            const data = await response.json();
-            
-            if (data.error) {
-                updateMessage(loadingId, `抱歉，我遇到了问题：${data.error}`);
-            } else {
+            try {
+                // 调用API
+                const response = await fetch('/api/ask', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ question, context })
+                });
+                
+                const data = await response.json();
+                
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+                
                 updateMessage(loadingId, data.answer);
+            } catch (apiError) {
+                console.log('AI API调用失败，显示友好的错误信息');
+                
+                // 在GitHub Pages环境中，显示友好的错误信息
+                let friendlyMessage = "抱歉，AI助手功能在GitHub Pages环境中不可用。";
+                
+                if (window.location.hostname.includes('github.io')) {
+                    friendlyMessage += " 这是因为GitHub Pages只支持静态内容，不能运行服务器端代码。如果您需要使用AI助手功能，请在本地运行此应用。";
+                } else {
+                    friendlyMessage += " 错误信息: " + apiError.message;
+                }
+                
+                updateMessage(loadingId, friendlyMessage);
             }
         } catch (error) {
             console.error('AI助手错误:', error);
