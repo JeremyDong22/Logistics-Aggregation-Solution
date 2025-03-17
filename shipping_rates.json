@@ -1,0 +1,3842 @@
+{
+  "英国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "俄罗斯": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "阿拉伯联合酋长国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "日本": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "沙特阿拉伯": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "安哥拉": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "瑞士": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "阿塞拜疆": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "奥地利": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "阿富汗": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "埃塞俄比亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "墨西哥": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "梵蒂冈": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "荷兰": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "澳大利亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "哥斯达黎加": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "爱沙尼亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "黑山": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "波兰": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "加纳": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "几内亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "捷克共和国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "科特迪瓦": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "喀麦隆": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "美国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "巴林": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "加拿大": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "瑞典": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "格鲁吉亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "爱尔兰": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "马耳他": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "北马里亚纳群岛": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "加蓬": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "密克罗尼西亚联邦": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "纳米比亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "纽埃": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "塞舌尔": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "布基那法索": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "立陶宛": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "圣马力诺": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "斯洛文尼亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "斯洛伐克共和国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "坦桑尼亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "特里尼达和多巴哥": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "芬兰": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "多米尼克": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "摩尔多瓦": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "斯瓦尔巴群岛和扬马延岛": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "特克斯科斯群岛": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "意大利": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "莫桑比克": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "圣多美和普林西比": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "马提尼克岛": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "大韩民国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "德国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "匈牙利": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "亚美尼亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "印度尼西亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "摩洛哥": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "越南": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "乍得": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "所罗门群岛": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "马来西亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "马达加斯加": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "赞比亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "留尼汪岛": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "圣皮埃尔和密克隆": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "阿尔及利亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "安道尔共和国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "诺福克岛": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "文莱达鲁萨兰国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "乌克兰": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "哥伦比亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "厄瓜多尔": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "阿鲁巴": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "中非共和国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "库克群岛": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "泰国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "巴拉圭": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "萨尔瓦多": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "波多黎各": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "新西兰": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "尼日利亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "葡萄牙": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "新加坡": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "安提瓜和巴布达": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "法国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "秘鲁": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "老挝": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "西班牙": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "比利时": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "保加利亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "洪都拉斯": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "福克兰群岛-即马岛": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "吉尔吉斯斯坦": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "巴基斯坦": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "基里巴斯": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "丹麦": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "巴西": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "玻利维亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "图瓦卢": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "圣基茨和尼维斯": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "拉脱维亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "哈萨克斯坦": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "北马其顿": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "斐济": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "以色列": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "卢森堡": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "法属南部领地": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "希腊": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "萨摩亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "尼加拉瓜": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "新喀里多尼亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "土耳其": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "几内亚比绍共和国": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "厄立特里亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "阿尔巴尼亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "智利": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "肯尼亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "冰岛": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "克罗地亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "罗马尼亚": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "百慕大": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "巴哈马": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "乌拉圭": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "乌兹别克斯坦": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "白俄罗斯": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  },
+  "挪威": {
+    "1": {
+      "normal": null,
+      "battery": null
+    },
+    "2": {
+      "normal": null,
+      "battery": null
+    },
+    "5": {
+      "normal": null,
+      "battery": null
+    },
+    "10": {
+      "normal": null,
+      "battery": null
+    },
+    "20": {
+      "normal": null,
+      "battery": null
+    },
+    "0.1": {
+      "normal": null,
+      "battery": null
+    },
+    "0.5": {
+      "normal": null,
+      "battery": null
+    }
+  }
+}

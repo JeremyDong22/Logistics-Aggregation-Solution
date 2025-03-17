@@ -123,21 +123,53 @@ document.addEventListener('DOMContentLoaded', function() {
             resultsContainer.classList.add('d-none');
             noResults.classList.add('d-none');
             
-            // 调用API
-            const response = await fetch('/api/query-db', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ itemType, weight, country })
-            });
+            let data;
             
-            const data = await response.json();
-            
-            if (data.error) {
-                console.error('查询出错:', data.error);
-                noResults.classList.remove('d-none');
-                return;
+            try {
+                // 首先尝试从服务器 API 获取数据
+                const response = await fetch('/api/query-db', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ itemType, weight, country })
+                });
+                
+                data = await response.json();
+                
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+            } catch (apiError) {
+                console.log('从 API 加载数据失败，尝试从静态 JSON 文件加载...');
+                
+                // 如果 API 请求失败，尝试从静态 JSON 文件加载
+                const response = await fetch('/shipping_rates.json');
+                const allRates = await response.json();
+                
+                // 从静态 JSON 文件中提取相关数据
+                if (allRates[country]) {
+                    // 找到最接近的重量
+                    const weights = Object.keys(allRates[country]).map(Number).sort((a, b) => a - b);
+                    let closestWeight = weights[0];
+                    
+                    for (const w of weights) {
+                        if (w <= weight) {
+                            closestWeight = w;
+                        } else {
+                            break;
+                        }
+                    }
+                    
+                    // 获取对应的物流选项
+                    const options = allRates[country][closestWeight][itemType === 'battery' ? 'battery' : 'normal'] || [];
+                    
+                    data = {
+                        results: options
+                    };
+                } else {
+                    throw new Error('未找到该国家的物流费率');
+                }
             }
             
             // 存储当前结果
