@@ -8,8 +8,10 @@ yarn-error.log
 .env
 
 # Database files
-# *.db
-# *.db-journal
+*.db
+*.db-journal
+# 但是允许包含我们的主数据库文件
+!cainiao_logistics.db
 
 # OS files
 .DS_Store
