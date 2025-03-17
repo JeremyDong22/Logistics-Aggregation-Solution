@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } catch (apiError) {
                 console.log('从 API 加载国家列表失败，尝试从静态 JSON 文件加载...');
                 // 如果 API 请求失败，尝试从静态 JSON 文件加载
-                const response = await fetch('/countries.json');
+                const response = await fetch('./countries.json');
                 data = { countries: await response.json() };
             }
             
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('从 API 加载数据失败，尝试从静态 JSON 文件加载...');
                 
                 // 如果 API 请求失败，尝试从静态 JSON 文件加载
-                const response = await fetch('/shipping_rates.json');
+                const response = await fetch('./shipping_rates.json');
                 const allRates = await response.json();
                 
                 // 从静态 JSON 文件中提取相关数据
