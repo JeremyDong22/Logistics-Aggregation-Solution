@@ -66,10 +66,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 const response = await fetch('/api/countries');
                 data = await response.json();
             } catch (apiError) {
-                console.log('从 API 加载国家列表失败，尝试从静态 JSON 文件加载...');
+                console.log('从 API 加载国家列表失败，尝试从静态 JSON 文件加载...', apiError);
                 // 如果 API 请求失败，尝试从静态 JSON 文件加载
-                const response = await fetch('./countries.json');
-                data = { countries: await response.json() };
+                const baseUrl = window.location.href.endsWith('/') ? window.location.href : window.location.href + '/';
+                const jsonUrl = new URL('countries.json', baseUrl).href;
+                console.log('尝试从以下URL加载国家列表:', jsonUrl);
+                try {
+                    const response = await fetch(jsonUrl);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const jsonData = await response.json();
+                    console.log('成功加载国家列表JSON:', jsonData.length, '个国家');
+                    data = { countries: jsonData };
+                } catch (jsonError) {
+                    console.error('从静态JSON文件加载国家列表失败:', jsonError);
+                    throw jsonError;
+                }
             }
             
             // 清空加载提示
@@ -141,34 +154,47 @@ document.addEventListener('DOMContentLoaded', function() {
                     throw new Error(data.error);
                 }
             } catch (apiError) {
-                console.log('从 API 加载数据失败，尝试从静态 JSON 文件加载...');
+                console.log('从 API 加载数据失败，尝试从静态 JSON 文件加载...', apiError);
                 
                 // 如果 API 请求失败，尝试从静态 JSON 文件加载
-                const response = await fetch('./shipping_rates.json');
-                const allRates = await response.json();
+                const baseUrl = window.location.href.endsWith('/') ? window.location.href : window.location.href + '/';
+                const jsonUrl = new URL('shipping_rates.json', baseUrl).href;
+                console.log('尝试从以下URL加载物流费率:', jsonUrl);
                 
-                // 从静态 JSON 文件中提取相关数据
-                if (allRates[country]) {
-                    // 找到最接近的重量
-                    const weights = Object.keys(allRates[country]).map(Number).sort((a, b) => a - b);
-                    let closestWeight = weights[0];
-                    
-                    for (const w of weights) {
-                        if (w <= weight) {
-                            closestWeight = w;
-                        } else {
-                            break;
-                        }
+                try {
+                    const response = await fetch(jsonUrl);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
                     }
+                    const allRates = await response.json();
+                    console.log('成功加载物流费率JSON，包含', Object.keys(allRates).length, '个国家的数据');
                     
-                    // 获取对应的物流选项
-                    const options = allRates[country][closestWeight][itemType === 'battery' ? 'battery' : 'normal'] || [];
-                    
-                    data = {
-                        results: options
-                    };
-                } else {
-                    throw new Error('未找到该国家的物流费率');
+                    // 从静态 JSON 文件中提取相关数据
+                    if (allRates[country]) {
+                        // 找到最接近的重量
+                        const weights = Object.keys(allRates[country]).map(Number).sort((a, b) => a - b);
+                        let closestWeight = weights[0];
+                        
+                        for (const w of weights) {
+                            if (w <= weight) {
+                                closestWeight = w;
+                            } else {
+                                break;
+                            }
+                        }
+                        
+                        // 获取对应的物流选项
+                        const options = allRates[country][closestWeight][itemType === 'battery' ? 'battery' : 'normal'] || [];
+                        
+                        data = {
+                            results: options
+                        };
+                    } else {
+                        throw new Error('未找到该国家的物流费率');
+                    }
+                } catch (jsonError) {
+                    console.error('从静态JSON文件加载物流费率失败:', jsonError);
+                    throw jsonError;
                 }
             }
             
