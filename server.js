@@ -192,12 +192,10 @@ if (require.main === module) {
   // 运行测试
   testAIBehavior().catch(err => {
     console.error('测试出错:', err);
-  });
-} else {
-  // 正常启动服务器
-  // 启动服务器
-  app.listen(PORT, () => {
-    console.log(`服务器运行在 http://localhost:${PORT}`);
-    console.log(`API密钥状态: ${process.env.OPENAI_API_KEY ? '已设置' : '未设置'}`);
+  }).finally(() => {
+    // 启动服务器
+    app.listen(PORT, () => {
+      console.log(`服务器运行在 http://localhost:${PORT}`);
+    });
   });
 } 
