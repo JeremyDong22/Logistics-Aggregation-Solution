@@ -47,27 +47,63 @@ document.addEventListener('DOMContentLoaded', function() {
     // 从数据库加载国家列表
     async function loadCountries() {
         try {
+            console.log('正在从服务器加载国家列表...');
+            const countrySelect = document.getElementById('country');
+            const defaultOption = countrySelect.querySelector('option[disabled]');
+            
+            // 显示加载中提示
+            countrySelect.innerHTML = '';
+            countrySelect.appendChild(defaultOption);
+            const loadingOption = document.createElement('option');
+            loadingOption.textContent = '加载中...';
+            loadingOption.disabled = true;
+            countrySelect.appendChild(loadingOption);
+            
+            // 从服务器获取国家列表
             const response = await fetch('/api/countries');
             const data = await response.json();
             
+            // 清空加载提示
+            countrySelect.innerHTML = '';
+            countrySelect.appendChild(defaultOption);
+            
             if (data.countries && data.countries.length > 0) {
-                const countrySelect = document.getElementById('country');
-                const defaultOption = countrySelect.querySelector('option[disabled]');
+                console.log(`成功加载 ${data.countries.length} 个国家`);
                 
-                // 清空现有选项
-                countrySelect.innerHTML = '';
-                countrySelect.appendChild(defaultOption);
+                // 按字母顺序排序国家
+                const sortedCountries = data.countries.sort();
                 
                 // 添加国家选项
-                data.countries.forEach(country => {
+                sortedCountries.forEach(country => {
                     const option = document.createElement('option');
                     option.value = country;
                     option.textContent = country;
                     countrySelect.appendChild(option);
                 });
+            } else {
+                console.error('服务器返回的国家列表为空');
+                const errorOption = document.createElement('option');
+                errorOption.textContent = '加载国家列表失败';
+                errorOption.disabled = true;
+                countrySelect.appendChild(errorOption);
             }
         } catch (error) {
             console.error('加载国家列表出错:', error);
+            
+            // 显示错误提示
+            const countrySelect = document.getElementById('country');
+            countrySelect.innerHTML = '';
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = '请选择目的地国家';
+            defaultOption.disabled = true;
+            defaultOption.selected = true;
+            countrySelect.appendChild(defaultOption);
+            
+            const errorOption = document.createElement('option');
+            errorOption.textContent = '加载国家列表失败，请刷新页面重试';
+            errorOption.disabled = true;
+            countrySelect.appendChild(errorOption);
         }
     }
     

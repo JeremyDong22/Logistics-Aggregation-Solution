@@ -91,12 +91,15 @@ app.post('/api/query-db', async (req, res) => {
   try {
     const { country, weight, itemType } = req.body;
     
+    console.log('查询参数:', { country, weight, itemType });
+    
     if (!country || !weight) {
       return res.status(400).json({ error: '国家和重量参数不能为空' });
     }
     
     // 获取所有支持该国家的物流产品
     const options = await getShippingOptions(country);
+    console.log(`找到 ${options.length} 个支持 ${country} 的物流产品`);
     
     // 根据物品类型筛选产品
     let filteredOptions = options;
@@ -109,6 +112,7 @@ app.post('/api/query-db', async (req, res) => {
       
       if (itemTypeMap[itemType]) {
         filteredOptions = options.filter(itemTypeMap[itemType]);
+        console.log(`根据物品类型 ${itemType} 筛选后剩余 ${filteredOptions.length} 个物流产品`);
       }
     }
     
@@ -116,9 +120,11 @@ app.post('/api/query-db', async (req, res) => {
     const results = [];
     for (const option of filteredOptions) {
       try {
+        console.log(`尝试获取产品 ${option.product_id} 的费率...`);
         const rate = await getShippingRate(country, parseFloat(weight), option.product_id);
         
         if (rate) {
+          console.log(`成功获取产品 ${option.product_id} 的费率`);
           results.push({
             category: itemType || 'all',
             name: rate.name,
@@ -128,6 +134,8 @@ app.post('/api/query-db', async (req, res) => {
             basePrice: rate.baseCost,
             totalPrice: rate.totalPrice
           });
+        } else {
+          console.log(`未找到产品 ${option.product_id} 的费率`);
         }
       } catch (error) {
         console.error(`获取产品 ${option.product_id} 的费率出错:`, error);

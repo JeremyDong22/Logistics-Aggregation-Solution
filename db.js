@@ -119,6 +119,8 @@ function initializeDatabase() {
  */
 function getShippingOptions(country) {
   return new Promise((resolve, reject) => {
+    console.log(`正在查询支持 ${country} 的物流产品...`);
+    
     const query = `
       SELECT DISTINCT p.product_name, p.product_id
       FROM all_rates ar
@@ -128,8 +130,10 @@ function getShippingOptions(country) {
     
     db.all(query, [country], (err, rows) => {
       if (err) {
+        console.error(`查询支持 ${country} 的物流产品出错:`, err);
         reject(err);
       } else {
+        console.log(`找到 ${rows.length} 个支持 ${country} 的物流产品`);
         resolve(rows);
       }
     });
@@ -145,6 +149,8 @@ function getShippingOptions(country) {
  */
 function getShippingRate(country, weight, productId) {
   return new Promise((resolve, reject) => {
+    console.log(`正在查询 ${country} 的产品 ${productId} 费率，重量: ${weight}kg...`);
+    
     const query = `
       SELECT ar.*, p.product_name
       FROM all_rates ar
@@ -157,12 +163,16 @@ function getShippingRate(country, weight, productId) {
     
     db.get(query, [country, productId, weight, weight], (err, rate) => {
       if (err) {
+        console.error(`查询费率出错:`, err);
         reject(err);
       } else if (!rate) {
+        console.log(`未找到匹配的费率: 国家=${country}, 产品=${productId}, 重量=${weight}kg`);
         resolve(null);
       } else {
         // 计算总价格 = 基础价格 + (重量 * 单位价格)
         const totalPrice = rate.base_cost + (weight * rate.unit_cost);
+        
+        console.log(`找到匹配的费率: 国家=${country}, 产品=${productId}, 重量=${weight}kg, 总价=${totalPrice.toFixed(2)}元`);
         
         // 返回格式化的结果
         resolve({
@@ -185,6 +195,8 @@ function getShippingRate(country, weight, productId) {
  */
 function getSupportedCountries() {
   return new Promise((resolve, reject) => {
+    console.log('正在查询所有支持的国家...');
+    
     const query = `
       SELECT DISTINCT "Country Name"
       FROM all_rates
@@ -192,9 +204,12 @@ function getSupportedCountries() {
     
     db.all(query, [], (err, rows) => {
       if (err) {
+        console.error('查询国家列表出错:', err);
         reject(err);
       } else {
-        resolve(rows.map(row => row['Country Name']));
+        const countries = rows.map(row => row['Country Name']);
+        console.log(`找到 ${countries.length} 个支持的国家`);
+        resolve(countries);
       }
     });
   });
