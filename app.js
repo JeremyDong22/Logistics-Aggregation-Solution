@@ -158,23 +158,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // 如果 API 请求失败，尝试从静态 JSON 文件加载
                 const baseUrl = window.location.href.endsWith('/') ? window.location.href : window.location.href + '/';
-                const jsonUrl = new URL('shipping_rates.json', baseUrl).href;
-                console.log('尝试从以下URL加载物流费率:', jsonUrl);
+                
+                // 首先尝试加载美国的详细物流费率数据
+                const usJsonUrl = new URL('us_shipping_rates.json', baseUrl).href;
+                console.log('尝试从以下URL加载美国物流费率:', usJsonUrl);
                 
                 try {
-                    const response = await fetch(jsonUrl);
+                    const response = await fetch(usJsonUrl);
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
                     }
-                    const allRates = await response.json();
-                    console.log('成功加载物流费率JSON，包含', Object.keys(allRates).length, '个国家的数据');
+                    const usRates = await response.json();
+                    console.log('成功加载美国物流费率JSON');
                     
-                    // 从静态 JSON 文件中提取相关数据
-                    if (allRates[country]) {
-                        console.log(`找到国家 ${country} 的数据，包含 ${Object.keys(allRates[country]).length} 个重量区间`);
+                    // 检查是否是美国的查询
+                    if (country === '美国' || country.toLowerCase() === 'usa' || country.toLowerCase() === 'united states') {
+                        console.log('检测到美国查询，使用详细物流费率数据');
                         
                         // 找到最接近的重量
-                        const weights = Object.keys(allRates[country]).map(Number).sort((a, b) => a - b);
+                        const weights = Object.keys(usRates.sample_rates).map(Number).sort((a, b) => a - b);
                         console.log(`可用重量区间: ${weights.join(', ')}`);
                         
                         let closestWeight = weights[0];
@@ -189,70 +191,134 @@ document.addEventListener('DOMContentLoaded', function() {
                         console.log(`选择的最接近重量: ${closestWeight}`);
                         
                         // 获取对应的物流选项
-                        const itemTypeKey = itemType === 'battery' ? 'battery' : 'normal';
-                        console.log(`查询物品类型: ${itemTypeKey}`);
-                        
-                        if (allRates[country][closestWeight] && allRates[country][closestWeight][itemTypeKey]) {
-                            const options = allRates[country][closestWeight][itemTypeKey];
+                        const sampleRates = usRates.sample_rates[closestWeight];
+                        if (sampleRates) {
+                            // 将对象转换为数组
+                            const options = Object.values(sampleRates).map(rate => ({
+                                product_id: rate.product_id,
+                                name: usRates.products[rate.product_id].name,
+                                deliveryTime: rate.delivery_time,
+                                weightRange: `${rate.min_weight}-${rate.max_weight}kg`,
+                                unitPrice: rate.unit_cost.toString(),
+                                basePrice: rate.base_cost.toString(),
+                                totalPrice: rate.total_price.toString()
+                            }));
+                            
                             console.log(`找到 ${options.length} 个物流选项`);
                             
                             data = {
                                 results: options
                             };
-                        } else {
-                            console.log(`未找到匹配的物流选项，国家=${country}, 重量=${closestWeight}, 物品类型=${itemTypeKey}`);
-                            console.log('可用的物品类型:', Object.keys(allRates[country][closestWeight] || {}));
                             
-                            // 尝试使用任何可用的物品类型
-                            const availableTypes = Object.keys(allRates[country][closestWeight] || {});
-                            if (availableTypes.length > 0) {
-                                const options = allRates[country][closestWeight][availableTypes[0]];
-                                console.log(`使用备选物品类型 ${availableTypes[0]}，找到 ${options.length} 个物流选项`);
+                            // 存储当前结果并显示
+                            currentResults = data.results || [];
+                            displayResults(currentResults, itemType, weight, country);
+                            return;
+                        }
+                    }
+                    
+                    // 如果不是美国或没有找到匹配的费率，继续尝试使用通用物流费率文件
+                    throw new Error('不是美国查询或未找到匹配的费率');
+                } catch (usJsonError) {
+                    console.log('从美国物流费率JSON加载失败，尝试通用物流费率文件:', usJsonError);
+                    
+                    // 尝试加载通用物流费率文件
+                    const jsonUrl = new URL('shipping_rates.json', baseUrl).href;
+                    console.log('尝试从以下URL加载通用物流费率:', jsonUrl);
+                    
+                    try {
+                        const response = await fetch(jsonUrl);
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        const allRates = await response.json();
+                        console.log('成功加载物流费率JSON，包含', Object.keys(allRates).length, '个国家的数据');
+                        
+                        // 从静态 JSON 文件中提取相关数据
+                        if (allRates[country]) {
+                            console.log(`找到国家 ${country} 的数据，包含 ${Object.keys(allRates[country]).length} 个重量区间`);
+                            
+                            // 找到最接近的重量
+                            const weights = Object.keys(allRates[country]).map(Number).sort((a, b) => a - b);
+                            console.log(`可用重量区间: ${weights.join(', ')}`);
+                            
+                            let closestWeight = weights[0];
+                            
+                            for (const w of weights) {
+                                if (w <= weight) {
+                                    closestWeight = w;
+                                } else {
+                                    break;
+                                }
+                            }
+                            console.log(`选择的最接近重量: ${closestWeight}`);
+                            
+                            // 获取对应的物流选项
+                            const itemTypeKey = itemType === 'battery' ? 'battery' : 'normal';
+                            console.log(`查询物品类型: ${itemTypeKey}`);
+                            
+                            if (allRates[country][closestWeight] && allRates[country][closestWeight][itemTypeKey]) {
+                                const options = allRates[country][closestWeight][itemTypeKey];
+                                console.log(`找到 ${options.length} 个物流选项`);
                                 
                                 data = {
                                     results: options
                                 };
                             } else {
-                                throw new Error(`未找到匹配的物流选项，国家=${country}, 重量=${closestWeight}`);
+                                console.log(`未找到匹配的物流选项，国家=${country}, 重量=${closestWeight}, 物品类型=${itemTypeKey}`);
+                                console.log('可用的物品类型:', Object.keys(allRates[country][closestWeight] || {}));
+                                
+                                // 尝试使用任何可用的物品类型
+                                const availableTypes = Object.keys(allRates[country][closestWeight] || {});
+                                if (availableTypes.length > 0) {
+                                    const options = allRates[country][closestWeight][availableTypes[0]];
+                                    console.log(`使用备选物品类型 ${availableTypes[0]}，找到 ${options.length} 个物流选项`);
+                                    
+                                    data = {
+                                        results: options
+                                    };
+                                } else {
+                                    throw new Error(`未找到匹配的物流选项，国家=${country}, 重量=${closestWeight}`);
+                                }
                             }
+                        } else {
+                            console.log(`未找到国家 ${country} 的数据，可用国家: ${Object.keys(allRates).slice(0, 10).join(', ')}...`);
+                            throw new Error('未找到该国家的物流费率');
                         }
-                    } else {
-                        console.log(`未找到国家 ${country} 的数据，可用国家: ${Object.keys(allRates).slice(0, 10).join(', ')}...`);
-                        throw new Error('未找到该国家的物流费率');
+                    } catch (jsonError) {
+                        console.error('从静态JSON文件加载物流费率失败:', jsonError);
+                        
+                        // 创建示例数据作为备用方案
+                        console.log('创建示例数据作为备用方案');
+                        
+                        // 创建一些示例物流选项，确保格式与数据库返回的完全一致
+                        const exampleOptions = [
+                            {
+                                product_id: "CN_GLO_STD",
+                                name: "菜鸟国际标准",
+                                deliveryTime: "7-15",
+                                weightRange: "0-30kg",
+                                unitPrice: "130.00",
+                                basePrice: "0.00",
+                                totalPrice: (130 * weight).toFixed(2)
+                            },
+                            {
+                                product_id: "CN_GLO_EXP",
+                                name: "菜鸟国际快速",
+                                deliveryTime: "5-10",
+                                weightRange: "0-30kg",
+                                unitPrice: "180.00",
+                                basePrice: "0.00",
+                                totalPrice: (180 * weight).toFixed(2)
+                            }
+                        ];
+                        
+                        console.log('创建的示例数据:', JSON.stringify(exampleOptions, null, 2));
+                        
+                        data = {
+                            results: exampleOptions
+                        };
                     }
-                } catch (jsonError) {
-                    console.error('从静态JSON文件加载物流费率失败:', jsonError);
-                    
-                    // 创建示例数据作为备用方案
-                    console.log('创建示例数据作为备用方案');
-                    
-                    // 创建一些示例物流选项，确保格式与数据库返回的完全一致
-                    const exampleOptions = [
-                        {
-                            product_id: "CN_GLO_STD",
-                            name: "菜鸟国际标准",
-                            deliveryTime: "7-15",
-                            weightRange: "0-30kg",
-                            unitPrice: "130.00",
-                            basePrice: "0.00",
-                            totalPrice: (130 * weight).toFixed(2)
-                        },
-                        {
-                            product_id: "CN_GLO_EXP",
-                            name: "菜鸟国际快速",
-                            deliveryTime: "5-10",
-                            weightRange: "0-30kg",
-                            unitPrice: "180.00",
-                            basePrice: "0.00",
-                            totalPrice: (180 * weight).toFixed(2)
-                        }
-                    ];
-                    
-                    console.log('创建的示例数据:', JSON.stringify(exampleOptions, null, 2));
-                    
-                    data = {
-                        results: exampleOptions
-                    };
                 }
             }
             

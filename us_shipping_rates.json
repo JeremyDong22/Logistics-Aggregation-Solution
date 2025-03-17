@@ -1,0 +1,693 @@
+{
+  "country": "美国",
+  "products": {
+    "CN_GLO_STD": {
+      "name": "菜鸟国际快递-标准-普货",
+      "id": "CN_GLO_STD",
+      "rates": [
+        {
+          "min_weight": 0,
+          "max_weight": 0.05,
+          "unit_cost": 0,
+          "base_cost": 24.05,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.05,
+          "max_weight": 0.1,
+          "unit_cost": 81,
+          "base_cost": 20,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.1,
+          "max_weight": 0.2,
+          "unit_cost": 86,
+          "base_cost": 18,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.2,
+          "max_weight": 0.45,
+          "unit_cost": 84,
+          "base_cost": 16,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.45,
+          "max_weight": 0.7,
+          "unit_cost": 82,
+          "base_cost": 16,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.7,
+          "max_weight": 2,
+          "unit_cost": 82,
+          "base_cost": 9,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 2,
+          "max_weight": 11,
+          "unit_cost": 76,
+          "base_cost": 9,
+          "delivery_time": "10-15CD"
+        }
+      ]
+    },
+    "CN_GLO_STD_BAT": {
+      "name": "菜鸟国际快递-标准-带电",
+      "id": "CN_GLO_STD_BAT",
+      "rates": [
+        {
+          "min_weight": 0,
+          "max_weight": 0.05,
+          "unit_cost": 0,
+          "base_cost": 24.4,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.05,
+          "max_weight": 0.1,
+          "unit_cost": 88,
+          "base_cost": 20,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.1,
+          "max_weight": 0.2,
+          "unit_cost": 94,
+          "base_cost": 18,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.2,
+          "max_weight": 0.45,
+          "unit_cost": 94,
+          "base_cost": 18,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.45,
+          "max_weight": 0.7,
+          "unit_cost": 94,
+          "base_cost": 18,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.7,
+          "max_weight": 2,
+          "unit_cost": 94,
+          "base_cost": 9,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 2,
+          "max_weight": 11,
+          "unit_cost": 94,
+          "base_cost": 9,
+          "delivery_time": "10-15CD"
+        }
+      ]
+    },
+    "CN_GLO_CLOTHES": {
+      "name": "菜鸟国际快递-服装专线",
+      "id": "CN_GLO_CLOTHES",
+      "rates": [
+        {
+          "min_weight": 0,
+          "max_weight": 0.05,
+          "unit_cost": 0,
+          "base_cost": 24.05,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.05,
+          "max_weight": 0.1,
+          "unit_cost": 81,
+          "base_cost": 20,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.1,
+          "max_weight": 0.2,
+          "unit_cost": 81,
+          "base_cost": 18,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.2,
+          "max_weight": 0.45,
+          "unit_cost": 81,
+          "base_cost": 16,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.45,
+          "max_weight": 0.7,
+          "unit_cost": 81,
+          "base_cost": 16,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.7,
+          "max_weight": 2,
+          "unit_cost": 81,
+          "base_cost": 9,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 2,
+          "max_weight": 11,
+          "unit_cost": 81,
+          "base_cost": 9,
+          "delivery_time": "10-15CD"
+        }
+      ]
+    },
+    "CN_GLO_EXP": {
+      "name": "菜鸟国际快递-快线-普货",
+      "id": "CN_GLO_EXP",
+      "rates": [
+        {
+          "min_weight": 0,
+          "max_weight": 0.05,
+          "unit_cost": 0,
+          "base_cost": 33.25,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 0.05,
+          "max_weight": 0.1,
+          "unit_cost": 105,
+          "base_cost": 28,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 0.1,
+          "max_weight": 0.2,
+          "unit_cost": 103,
+          "base_cost": 28,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 0.2,
+          "max_weight": 0.3,
+          "unit_cost": 103,
+          "base_cost": 29,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 0.3,
+          "max_weight": 0.45,
+          "unit_cost": 103,
+          "base_cost": 32,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 0.45,
+          "max_weight": 0.8,
+          "unit_cost": 100,
+          "base_cost": 54,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 0.8,
+          "max_weight": 5,
+          "unit_cost": 100,
+          "base_cost": 54,
+          "delivery_time": "5-9CD"
+        }
+      ]
+    },
+    "CN_GLO_EXP_BAT": {
+      "name": "菜鸟国际快递-快线-带电",
+      "id": "CN_GLO_EXP_BAT",
+      "rates": [
+        {
+          "min_weight": 0,
+          "max_weight": 0.05,
+          "unit_cost": 0,
+          "base_cost": 33.9,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 0.05,
+          "max_weight": 0.1,
+          "unit_cost": 118,
+          "base_cost": 28,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 0.1,
+          "max_weight": 0.2,
+          "unit_cost": 110,
+          "base_cost": 28,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 0.2,
+          "max_weight": 0.45,
+          "unit_cost": 110,
+          "base_cost": 29,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 0.45,
+          "max_weight": 2,
+          "unit_cost": 112,
+          "base_cost": 54,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 2,
+          "max_weight": 3,
+          "unit_cost": 112,
+          "base_cost": 54,
+          "delivery_time": "5-9CD"
+        },
+        {
+          "min_weight": 3,
+          "max_weight": 5,
+          "unit_cost": 112,
+          "base_cost": 54,
+          "delivery_time": "5-9CD"
+        }
+      ]
+    },
+    " CN_GLO_STD_SEL": {
+      "name": "菜鸟国际快递_标准_普货(精选)",
+      "id": " CN_GLO_STD_SEL",
+      "rates": [
+        {
+          "min_weight": 0,
+          "max_weight": 0.05,
+          "unit_cost": 0,
+          "base_cost": 25,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.05,
+          "max_weight": 0.1,
+          "unit_cost": 100,
+          "base_cost": 20,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.1,
+          "max_weight": 0.2,
+          "unit_cost": 102,
+          "base_cost": 20,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.2,
+          "max_weight": 0.45,
+          "unit_cost": 100,
+          "base_cost": 20,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.45,
+          "max_weight": 0.7,
+          "unit_cost": 102,
+          "base_cost": 25,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 0.7,
+          "max_weight": 4.5,
+          "unit_cost": 100,
+          "base_cost": 20,
+          "delivery_time": "10-15CD"
+        },
+        {
+          "min_weight": 4.5,
+          "max_weight": 11,
+          "unit_cost": 125,
+          "base_cost": 45,
+          "delivery_time": "10-15CD"
+        }
+      ]
+    }
+  },
+  "sample_rates": {
+    "1": {
+      "CN_GLO_STD": {
+        "product_id": "CN_GLO_STD",
+        "min_weight": 0.7,
+        "max_weight": 2,
+        "unit_cost": 82,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 91
+      },
+      "CN_GLO_STD_BAT": {
+        "product_id": "CN_GLO_STD_BAT",
+        "min_weight": 0.7,
+        "max_weight": 2,
+        "unit_cost": 94,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 103
+      },
+      "CN_GLO_CLOTHES": {
+        "product_id": "CN_GLO_CLOTHES",
+        "min_weight": 0.7,
+        "max_weight": 2,
+        "unit_cost": 81,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 90
+      },
+      "CN_GLO_EXP": {
+        "product_id": "CN_GLO_EXP",
+        "min_weight": 0.8,
+        "max_weight": 5,
+        "unit_cost": 100,
+        "base_cost": 54,
+        "delivery_time": "5-9CD",
+        "total_price": 154
+      },
+      "CN_GLO_EXP_BAT": {
+        "product_id": "CN_GLO_EXP_BAT",
+        "min_weight": 0.45,
+        "max_weight": 2,
+        "unit_cost": 112,
+        "base_cost": 54,
+        "delivery_time": "5-9CD",
+        "total_price": 166
+      },
+      " CN_GLO_STD_SEL": {
+        "product_id": " CN_GLO_STD_SEL",
+        "min_weight": 0.7,
+        "max_weight": 4.5,
+        "unit_cost": 100,
+        "base_cost": 20,
+        "delivery_time": "10-15CD",
+        "total_price": 120
+      }
+    },
+    "2": {
+      "CN_GLO_STD": {
+        "product_id": "CN_GLO_STD",
+        "min_weight": 2,
+        "max_weight": 11,
+        "unit_cost": 76,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 161
+      },
+      "CN_GLO_STD_BAT": {
+        "product_id": "CN_GLO_STD_BAT",
+        "min_weight": 2,
+        "max_weight": 11,
+        "unit_cost": 94,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 197
+      },
+      "CN_GLO_CLOTHES": {
+        "product_id": "CN_GLO_CLOTHES",
+        "min_weight": 2,
+        "max_weight": 11,
+        "unit_cost": 81,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 171
+      },
+      "CN_GLO_EXP": {
+        "product_id": "CN_GLO_EXP",
+        "min_weight": 0.8,
+        "max_weight": 5,
+        "unit_cost": 100,
+        "base_cost": 54,
+        "delivery_time": "5-9CD",
+        "total_price": 254
+      },
+      "CN_GLO_EXP_BAT": {
+        "product_id": "CN_GLO_EXP_BAT",
+        "min_weight": 2,
+        "max_weight": 3,
+        "unit_cost": 112,
+        "base_cost": 54,
+        "delivery_time": "5-9CD",
+        "total_price": 278
+      },
+      " CN_GLO_STD_SEL": {
+        "product_id": " CN_GLO_STD_SEL",
+        "min_weight": 0.7,
+        "max_weight": 4.5,
+        "unit_cost": 100,
+        "base_cost": 20,
+        "delivery_time": "10-15CD",
+        "total_price": 220
+      }
+    },
+    "5": {
+      "CN_GLO_STD": {
+        "product_id": "CN_GLO_STD",
+        "min_weight": 2,
+        "max_weight": 11,
+        "unit_cost": 76,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 389
+      },
+      "CN_GLO_STD_BAT": {
+        "product_id": "CN_GLO_STD_BAT",
+        "min_weight": 2,
+        "max_weight": 11,
+        "unit_cost": 94,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 479
+      },
+      "CN_GLO_CLOTHES": {
+        "product_id": "CN_GLO_CLOTHES",
+        "min_weight": 2,
+        "max_weight": 11,
+        "unit_cost": 81,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 414
+      },
+      " CN_GLO_STD_SEL": {
+        "product_id": " CN_GLO_STD_SEL",
+        "min_weight": 4.5,
+        "max_weight": 11,
+        "unit_cost": 125,
+        "base_cost": 45,
+        "delivery_time": "10-15CD",
+        "total_price": 670
+      }
+    },
+    "10": {
+      "CN_GLO_STD": {
+        "product_id": "CN_GLO_STD",
+        "min_weight": 2,
+        "max_weight": 11,
+        "unit_cost": 76,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 769
+      },
+      "CN_GLO_STD_BAT": {
+        "product_id": "CN_GLO_STD_BAT",
+        "min_weight": 2,
+        "max_weight": 11,
+        "unit_cost": 94,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 949
+      },
+      "CN_GLO_CLOTHES": {
+        "product_id": "CN_GLO_CLOTHES",
+        "min_weight": 2,
+        "max_weight": 11,
+        "unit_cost": 81,
+        "base_cost": 9,
+        "delivery_time": "10-15CD",
+        "total_price": 819
+      },
+      " CN_GLO_STD_SEL": {
+        "product_id": " CN_GLO_STD_SEL",
+        "min_weight": 4.5,
+        "max_weight": 11,
+        "unit_cost": 125,
+        "base_cost": 45,
+        "delivery_time": "10-15CD",
+        "total_price": 1295
+      }
+    },
+    "0.1": {
+      "CN_GLO_STD": {
+        "product_id": "CN_GLO_STD",
+        "min_weight": 0.1,
+        "max_weight": 0.2,
+        "unit_cost": 86,
+        "base_cost": 18,
+        "delivery_time": "10-15CD",
+        "total_price": 26.6
+      },
+      "CN_GLO_STD_BAT": {
+        "product_id": "CN_GLO_STD_BAT",
+        "min_weight": 0.1,
+        "max_weight": 0.2,
+        "unit_cost": 94,
+        "base_cost": 18,
+        "delivery_time": "10-15CD",
+        "total_price": 27.4
+      },
+      "CN_GLO_CLOTHES": {
+        "product_id": "CN_GLO_CLOTHES",
+        "min_weight": 0.1,
+        "max_weight": 0.2,
+        "unit_cost": 81,
+        "base_cost": 18,
+        "delivery_time": "10-15CD",
+        "total_price": 26.1
+      },
+      "CN_GLO_EXP": {
+        "product_id": "CN_GLO_EXP",
+        "min_weight": 0.1,
+        "max_weight": 0.2,
+        "unit_cost": 103,
+        "base_cost": 28,
+        "delivery_time": "5-9CD",
+        "total_price": 38.3
+      },
+      "CN_GLO_EXP_BAT": {
+        "product_id": "CN_GLO_EXP_BAT",
+        "min_weight": 0.1,
+        "max_weight": 0.2,
+        "unit_cost": 110,
+        "base_cost": 28,
+        "delivery_time": "5-9CD",
+        "total_price": 39
+      },
+      " CN_GLO_STD_SEL": {
+        "product_id": " CN_GLO_STD_SEL",
+        "min_weight": 0.1,
+        "max_weight": 0.2,
+        "unit_cost": 102,
+        "base_cost": 20,
+        "delivery_time": "10-15CD",
+        "total_price": 30.2
+      }
+    },
+    "0.2": {
+      "CN_GLO_STD": {
+        "product_id": "CN_GLO_STD",
+        "min_weight": 0.2,
+        "max_weight": 0.45,
+        "unit_cost": 84,
+        "base_cost": 16,
+        "delivery_time": "10-15CD",
+        "total_price": 32.8
+      },
+      "CN_GLO_STD_BAT": {
+        "product_id": "CN_GLO_STD_BAT",
+        "min_weight": 0.2,
+        "max_weight": 0.45,
+        "unit_cost": 94,
+        "base_cost": 18,
+        "delivery_time": "10-15CD",
+        "total_price": 36.8
+      },
+      "CN_GLO_CLOTHES": {
+        "product_id": "CN_GLO_CLOTHES",
+        "min_weight": 0.2,
+        "max_weight": 0.45,
+        "unit_cost": 81,
+        "base_cost": 16,
+        "delivery_time": "10-15CD",
+        "total_price": 32.2
+      },
+      "CN_GLO_EXP": {
+        "product_id": "CN_GLO_EXP",
+        "min_weight": 0.2,
+        "max_weight": 0.3,
+        "unit_cost": 103,
+        "base_cost": 29,
+        "delivery_time": "5-9CD",
+        "total_price": 49.6
+      },
+      "CN_GLO_EXP_BAT": {
+        "product_id": "CN_GLO_EXP_BAT",
+        "min_weight": 0.2,
+        "max_weight": 0.45,
+        "unit_cost": 110,
+        "base_cost": 29,
+        "delivery_time": "5-9CD",
+        "total_price": 51
+      },
+      " CN_GLO_STD_SEL": {
+        "product_id": " CN_GLO_STD_SEL",
+        "min_weight": 0.2,
+        "max_weight": 0.45,
+        "unit_cost": 100,
+        "base_cost": 20,
+        "delivery_time": "10-15CD",
+        "total_price": 40
+      }
+    },
+    "0.5": {
+      "CN_GLO_STD": {
+        "product_id": "CN_GLO_STD",
+        "min_weight": 0.45,
+        "max_weight": 0.7,
+        "unit_cost": 82,
+        "base_cost": 16,
+        "delivery_time": "10-15CD",
+        "total_price": 57
+      },
+      "CN_GLO_STD_BAT": {
+        "product_id": "CN_GLO_STD_BAT",
+        "min_weight": 0.45,
+        "max_weight": 0.7,
+        "unit_cost": 94,
+        "base_cost": 18,
+        "delivery_time": "10-15CD",
+        "total_price": 65
+      },
+      "CN_GLO_CLOTHES": {
+        "product_id": "CN_GLO_CLOTHES",
+        "min_weight": 0.45,
+        "max_weight": 0.7,
+        "unit_cost": 81,
+        "base_cost": 16,
+        "delivery_time": "10-15CD",
+        "total_price": 56.5
+      },
+      "CN_GLO_EXP": {
+        "product_id": "CN_GLO_EXP",
+        "min_weight": 0.45,
+        "max_weight": 0.8,
+        "unit_cost": 100,
+        "base_cost": 54,
+        "delivery_time": "5-9CD",
+        "total_price": 104
+      },
+      "CN_GLO_EXP_BAT": {
+        "product_id": "CN_GLO_EXP_BAT",
+        "min_weight": 0.45,
+        "max_weight": 2,
+        "unit_cost": 112,
+        "base_cost": 54,
+        "delivery_time": "5-9CD",
+        "total_price": 110
+      },
+      " CN_GLO_STD_SEL": {
+        "product_id": " CN_GLO_STD_SEL",
+        "min_weight": 0.45,
+        "max_weight": 0.7,
+        "unit_cost": 102,
+        "base_cost": 25,
+        "delivery_time": "10-15CD",
+        "total_price": 76
+      }
+    }
+  }
+}
