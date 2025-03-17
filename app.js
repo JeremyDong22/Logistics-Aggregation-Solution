@@ -59,9 +59,18 @@ document.addEventListener('DOMContentLoaded', function() {
             loadingOption.disabled = true;
             countrySelect.appendChild(loadingOption);
             
-            // 从服务器获取国家列表
-            const response = await fetch('/api/countries');
-            const data = await response.json();
+            let data;
+            
+            try {
+                // 首先尝试从服务器 API 获取国家列表
+                const response = await fetch('/api/countries');
+                data = await response.json();
+            } catch (apiError) {
+                console.log('从 API 加载国家列表失败，尝试从静态 JSON 文件加载...');
+                // 如果 API 请求失败，尝试从静态 JSON 文件加载
+                const response = await fetch('/countries.json');
+                data = { countries: await response.json() };
+            }
             
             // 清空加载提示
             countrySelect.innerHTML = '';
