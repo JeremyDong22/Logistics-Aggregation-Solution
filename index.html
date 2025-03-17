@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜鸟价格查询</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container py-4">
+        <header class="mb-4 text-center">
+            <h1 class="display-5 fw-bold">菜鸟价格查询</h1>
+            <p class="lead">输入物品信息，查询最优物流方案</p>
+        </header>
+
+        <div class="row">
+            <div class="col-lg-5 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h4 mb-3">查询条件</h2>
+                        <form id="queryForm">
+                            <div class="mb-3">
+                                <label for="itemType" class="form-label">物品种类</label>
+                                <select class="form-select" id="itemType" required>
+                                    <option value="" selected disabled>请选择物品类型</option>
+                                    <option value="all">所有物品</option>
+                                    <option value="normal">普通物品</option>
+                                    <option value="battery">含电池物品</option>
+                                    <option value="clothes">服装</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="weight" class="form-label">重量 (kg)</label>
+                                <input type="number" class="form-control" id="weight" min="0.01" max="30" step="0.01" required>
+                                <div class="form-text">请输入0.01-30kg之间的重量</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="country" class="form-label">目的地国家</label>
+                                <select class="form-select" id="country" required>
+                                    <option value="" selected disabled>请选择目的地国家</option>
+                                    <option value="美国">美国</option>
+                                    <option value="英国">英国</option>
+                                    <option value="澳大利亚">澳大利亚</option>
+                                    <option value="加拿大">加拿大</option>
+                                    <option value="日本">日本</option>
+                                    <option value="德国">德国</option>
+                                    <option value="法国">法国</option>
+                                    <option value="巴西">巴西</option>
+                                    <option value="智利">智利</option>
+                                    <option value="意大利">意大利</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">查询</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- AI助手聊天界面 -->
+                <div class="card shadow-sm mt-4">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">AI物流助手</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="chatMessages" class="mb-3" style="height: 250px; overflow-y: auto;">
+                            <div class="mb-2">
+                                <div class="bg-light p-2 rounded d-inline-block">
+                                    你好！我是菜鸟物流AI助手，可以帮你选择最合适的物流方案。请先进行价格查询，然后你可以问我任何关于物流的问题。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="userQuestion" class="form-control" placeholder="例如：我想寄一部iPhone到意大利，有什么推荐？">
+                            <button class="btn btn-primary" id="askButton">发送</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <!-- 无结果提示 -->
+                <div id="noResults" class="alert alert-warning d-none">
+                    <h4 class="alert-heading">未找到匹配的物流方案</h4>
+                    <p>请尝试调整查询条件后重新查询。</p>
+                </div>
+
+                <!-- 查询结果 -->
+                <div id="resultsContainer" class="d-none">
+                    <h2 class="h4 mb-3">查询结果</h2>
+                    <p id="queryInfo" class="text-muted mb-4"></p>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="card option-card">
+                                <div class="card-header bg-success text-white">
+                                    <h3 class="h5 mb-0">最经济方案</h3>
+                                </div>
+                                <div class="card-body" id="cheapestOption">
+                                    <!-- 最经济方案内容 -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card option-card">
+                                <div class="card-header bg-primary text-white">
+                                    <h3 class="h5 mb-0">最快方案</h3>
+                                </div>
+                                <div class="card-body" id="fastestOption">
+                                    <!-- 最快方案内容 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="h5 mb-3">所有可用选项</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>物流产品</th>
+                                    <th>时效</th>
+                                    <th>重量区间</th>
+                                    <th>单价(CNY/KG)</th>
+                                    <th>基础费(CNY)</th>
+                                    <th>总价(CNY)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultsTable">
+                                <!-- 结果表格内容 -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-3 mt-4 border-top">
+        <p class="text-center text-muted">© 2023 菜鸟价格查询 | 价格仅供参考，实际价格以下单时为准</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
