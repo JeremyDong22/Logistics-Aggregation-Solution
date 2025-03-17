@@ -226,25 +226,29 @@ document.addEventListener('DOMContentLoaded', function() {
                     // 创建示例数据作为备用方案
                     console.log('创建示例数据作为备用方案');
                     
-                    // 创建一些示例物流选项
+                    // 创建一些示例物流选项，确保格式与数据库返回的完全一致
                     const exampleOptions = [
                         {
+                            product_id: "CN_GLO_STD",
                             name: "菜鸟国际标准",
-                            deliveryTime: "7-15CD",
-                            weightRange: "0.5-1kg",
+                            deliveryTime: "7-15",
+                            weightRange: "0-30kg",
                             unitPrice: "130.00",
                             basePrice: "0.00",
                             totalPrice: (130 * weight).toFixed(2)
                         },
                         {
+                            product_id: "CN_GLO_EXP",
                             name: "菜鸟国际快速",
-                            deliveryTime: "5-10CD",
-                            weightRange: "0.5-1kg",
+                            deliveryTime: "5-10",
+                            weightRange: "0-30kg",
                             unitPrice: "180.00",
                             basePrice: "0.00",
                             totalPrice: (180 * weight).toFixed(2)
                         }
                     ];
+                    
+                    console.log('创建的示例数据:', JSON.stringify(exampleOptions, null, 2));
                     
                     data = {
                         results: exampleOptions
@@ -358,6 +362,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 显示结果函数
     function displayResults(results, itemType, weight, country) {
+        console.log('显示结果，数据:', JSON.stringify(results, null, 2));
+        console.log('查询条件:', { itemType, weight, country });
+        
         // 清空之前的结果
         resultsTable.innerHTML = '';
         cheapestOption.innerHTML = '';
@@ -367,12 +374,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const itemTypeText = getItemTypeText(itemType);
         queryInfo.textContent = `查询物品：${itemTypeText}，重量：${weight} kg，目的地：${country}`;
         
-        if (results.length === 0) {
+        if (!results || results.length === 0) {
             // 没有找到结果
+            console.log('未找到结果，显示无结果提示');
             resultsContainer.classList.add('d-none');
             noResults.classList.remove('d-none');
             return;
         }
+        
+        console.log(`找到 ${results.length} 个结果，显示结果容器`);
         
         // 显示结果容器
         resultsContainer.classList.remove('d-none');
@@ -380,6 +390,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // 按总价排序
         const sortedByPrice = [...results].sort((a, b) => parseFloat(a.totalPrice) - parseFloat(b.totalPrice));
+        console.log('按价格排序后的第一个结果:', sortedByPrice.length > 0 ? sortedByPrice[0].name : '无');
         
         // 按时效排序
         const sortedByTime = [...results].sort((a, b) => {
@@ -387,13 +398,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const timeB = parseDeliveryTime(b.deliveryTime);
             return timeA.min - timeB.min;
         });
+        console.log('按时效排序后的第一个结果:', sortedByTime.length > 0 ? sortedByTime[0].name : '无');
         
         // 显示最便宜的选项
         if (sortedByPrice.length > 0) {
             const cheapest = sortedByPrice[0];
+            console.log('显示最便宜选项:', cheapest.name);
             cheapestOption.innerHTML = `
                 <h5>${cheapest.name}</h5>
-                <p class="delivery-time">预计 ${cheapest.deliveryTime} 送达</p>
+                <p class="delivery-time">预计 ${cheapest.deliveryTime} 天送达</p>
                 <p>重量区间: ${cheapest.weightRange}</p>
                 <p>单价: ${cheapest.unitPrice} CNY/KG</p>
                 <p>基础费: ${cheapest.basePrice} CNY</p>
@@ -404,9 +417,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // 显示最快的选项
         if (sortedByTime.length > 0) {
             const fastest = sortedByTime[0];
+            console.log('显示最快选项:', fastest.name);
             fastestOption.innerHTML = `
                 <h5>${fastest.name}</h5>
-                <p class="delivery-time">预计 ${fastest.deliveryTime} 送达</p>
+                <p class="delivery-time">预计 ${fastest.deliveryTime} 天送达</p>
                 <p>重量区间: ${fastest.weightRange}</p>
                 <p>单价: ${fastest.unitPrice} CNY/KG</p>
                 <p>基础费: ${fastest.basePrice} CNY</p>
@@ -415,12 +429,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // 填充结果表格
-        results.forEach(option => {
+        console.log('填充结果表格，共 ${results.length} 行');
+        results.forEach((option, index) => {
+            console.log(`处理第 ${index+1} 个选项:`, option.name);
             const row = document.createElement('tr');
             
             // 判断是否是最便宜或最快的选项
-            const isCheapest = sortedByPrice.length > 0 && option.name === sortedByPrice[0].name && option.weightRange === sortedByPrice[0].weightRange;
-            const isFastest = sortedByTime.length > 0 && option.name === sortedByTime[0].name && option.weightRange === sortedByTime[0].weightRange;
+            const isCheapest = sortedByPrice.length > 0 && option.name === sortedByPrice[0].name;
+            const isFastest = sortedByTime.length > 0 && option.name === sortedByTime[0].name;
             
             if (isCheapest || isFastest) {
                 row.classList.add('highlight');
@@ -428,7 +444,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             row.innerHTML = `
                 <td>${option.name}</td>
-                <td>${option.deliveryTime}</td>
+                <td>${option.deliveryTime} 天</td>
                 <td>${option.weightRange}</td>
                 <td>${option.unitPrice}</td>
                 <td>${option.basePrice}</td>
@@ -457,13 +473,40 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 解析时效
     function parseDeliveryTime(deliveryTime) {
-        const matches = deliveryTime.match(/(\d+)-(\d+)CD/);
+        console.log('解析时效:', deliveryTime);
+        
+        // 尝试匹配 "X-YCD" 格式
+        let matches = deliveryTime.match(/(\d+)-(\d+)CD/);
         if (matches) {
+            console.log('匹配到 X-YCD 格式');
             return {
                 min: parseInt(matches[1]),
                 max: parseInt(matches[2])
             };
         }
+        
+        // 尝试匹配 "X-Y" 格式
+        matches = deliveryTime.match(/(\d+)-(\d+)/);
+        if (matches) {
+            console.log('匹配到 X-Y 格式');
+            return {
+                min: parseInt(matches[1]),
+                max: parseInt(matches[2])
+            };
+        }
+        
+        // 尝试匹配单个数字
+        matches = deliveryTime.match(/(\d+)/);
+        if (matches) {
+            console.log('匹配到单个数字格式');
+            const num = parseInt(matches[1]);
+            return {
+                min: num,
+                max: num
+            };
+        }
+        
+        console.log('无法解析时效格式，使用默认值');
         return { min: 0, max: 0 };
     }
 }); 
